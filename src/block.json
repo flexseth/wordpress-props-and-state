@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/block-props-and-state",
+	"version": "0.1.0",
+	"title": "Block Props And State",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"inputText": {
+			"type": "string",
+			"default": "Hello World"
+		},
+		"isLoaded": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "block-props-and-state",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
