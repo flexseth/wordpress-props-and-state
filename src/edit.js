@@ -49,10 +49,11 @@ import './editor.scss';
 		<input type="text" value={props.attributes.inputText}
 			// onChange={ (e) => { setBlockData(inputText: e.target.value) } }
 			onChange={ 
-				(e) => { 
-					setBlockData({ inputText: e.target.value }) 
+				(newBlockData) => { 
+					let inputText = newBlockData.target.value;
+					setBlockData( {inputText} ) 
 					// realtime changes in the editor
-					props.setAttributes({ inputText: e.target.value })	
+					props.setAttributes( {inputText} )	
 					// saves block data for later use
 				} }
 		/>
@@ -62,8 +63,9 @@ import './editor.scss';
 			{__(
 				'Block Props And State – hello from the editor!',
 				'block-props-and-state'
-			)}
-			<br />Input text: { blockData.inputText }
+			)} 
+		
+		<br />Input text: { blockData.inputText }
 		</p>
 	);
 }
