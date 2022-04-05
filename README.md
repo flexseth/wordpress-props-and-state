@@ -2,7 +2,9 @@
 Made with @wordpress/create-block 
 
 Git clone the repo
+
 cd into directory
+
 Startup wp-env
 - Requirements: Docker - running
 - Requirements: Node/NPM - running/installed
