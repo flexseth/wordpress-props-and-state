@@ -8,7 +8,7 @@ Startup wp-env
 - Requirements: Node/NPM - running/installed
 
 Troubleshooting 
->> Could not connect to Docker. Is it running?
+> Could not connect to Docker. Is it running?
 Make sure to open the Docker application first, before wp-env
 
 npm run start 
