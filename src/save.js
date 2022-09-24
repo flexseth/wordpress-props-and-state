@@ -22,13 +22,11 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+export default function save(props) {
 	return (
-		<p {...useBlockProps.save()}>
-			{__(
-				'Block Props And State – hello from the saved content!',
-				'block-props-and-state'
-			)}
+		<p {...useBlockProps.save(props)}>
+			{ props.attributes.inputText }
+			{console.log(props)}
 		</p>
 	);
 }
